@@ -123,6 +123,10 @@ main {
       top: 300%;
       transform: translate(-50%, -300%);
     }
+
+    @media screen and (max-width: 450px) {
+
+    }
   }
 
   @media screen and (max-width: 628px) {
@@ -131,7 +135,7 @@ main {
 }
 
 .first-container {
-  height: 70vh;
+  min-height: 70vh;
   background-color: $beige;
 
   .first-info {
@@ -139,7 +143,6 @@ main {
 
     @media screen and (max-width: 628px) {
       width: auto;
-      height: 100vh;
     }
   }
 
@@ -163,7 +166,7 @@ main {
 }
 
 .second-container {
-  height: 70vh;
+  min-height: 70vh;
   background-color: $beige;
 
   .second-info {
@@ -184,7 +187,7 @@ main {
     @media screen and (max-width: 628px) {
       background-image: url('../images/mobile/image-stand-out.jpg');
       width: auto;
-      height: 100vh;
+      min-height: 40vh;
     }
   }
 
@@ -322,6 +325,10 @@ main {
       min-height: 50vh;
       width: 100vw;
     }
+
+    @media screen and (max-width: 375px) {
+      min-height: 70vh;
+    }
   }
 
   .fourth-info {
@@ -338,6 +345,10 @@ main {
       min-height: 50vh;
       width: 100vw;
     }
+
+    @media screen and (max-width: 375px) {
+      min-height: 70vh;
+    }
   }
 
   @media screen and (max-width: 628px) {
@@ -347,7 +358,7 @@ main {
 }
 
 .testimonials-section {
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: $beige;
   text-align: center;
 
@@ -357,7 +368,7 @@ main {
     letter-spacing: 5px;
     font-weight: 900;
     margin-top: 10vh;
-    margin-bottom: 12vh;
+    margin-bottom: 8vh;
     font-size: 1.25rem;
     color: $grayish-blue;
 
@@ -417,6 +428,7 @@ main {
 
       .person-job {
         color: $grayish-blue;
+        margin-bottom: 5vh;
 
         @media screen and (max-width: 628px) {
           font-size: 0.9rem;
@@ -444,6 +456,10 @@ main {
   @media screen and (max-width: 628px) {
     height: 100%;
     justify-content: center;
+  }
+
+  @media screen and (max-width: 375px) {
+    margin-top: 40vh;
   }
 }
 

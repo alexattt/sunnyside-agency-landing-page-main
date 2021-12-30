@@ -400,7 +400,7 @@ main {
 }
 
 .first-container {
-  height: 70vh;
+  min-height: 70vh;
   background-color: #fffcfa;
 }
 
@@ -411,7 +411,6 @@ main {
 @media screen and (max-width: 628px) {
   .first-container .first-info {
     width: auto;
-    height: 100vh;
   }
 }
 
@@ -441,7 +440,7 @@ main {
 }
 
 .second-container {
-  height: 70vh;
+  min-height: 70vh;
   background-color: #fffcfa;
 }
 
@@ -467,7 +466,7 @@ main {
   .second-container .stand-out-image-container {
     background-image: url("../images/mobile/image-stand-out.jpg");
     width: auto;
-    height: 100vh;
+    min-height: 40vh;
   }
 }
 
@@ -642,6 +641,12 @@ main {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .third-container .third-info {
+    min-height: 70vh;
+  }
+}
+
 .third-container .fourth-info {
   width: 50vw;
   -webkit-box-pack: end;
@@ -662,6 +667,12 @@ main {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .third-container .fourth-info {
+    min-height: 70vh;
+  }
+}
+
 @media screen and (max-width: 628px) {
   .third-container {
     height: 100vh;
@@ -673,7 +684,7 @@ main {
 }
 
 .testimonials-section {
-  min-height: 100vh;
+  min-height: 70vh;
   background-color: #fffcfa;
   text-align: center;
 }
@@ -684,7 +695,7 @@ main {
   letter-spacing: 5px;
   font-weight: 900;
   margin-top: 10vh;
-  margin-bottom: 12vh;
+  margin-bottom: 8vh;
   font-size: 1.25rem;
   color: #a7abae;
 }
@@ -762,6 +773,7 @@ main {
 
 .testimonials-section .testimonials-container .testimonial .person-job {
   color: #a7abae;
+  margin-bottom: 5vh;
 }
 
 @media screen and (max-width: 628px) {
@@ -801,6 +813,12 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .testimonials-section {
+    margin-top: 40vh;
   }
 }
 
