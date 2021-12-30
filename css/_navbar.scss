@@ -1,0 +1,137 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 30px;
+  align-items: center;
+  min-height: 8vh;
+  background-color: rgb(61, 190, 255);
+  font-family: 'Poppins', sans-serif;
+
+  .logo {
+    color: rgb(235, 235, 235);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .burger {
+    display: none;
+    cursor: pointer;
+
+    div {
+      width: 25px;
+      height: 3px;
+      background-color: $white;
+      margin: 5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 35vw;
+
+    li {
+      list-style: none;
+      font-size: 0.8rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $white;
+      transition: all 0.1s ease-in-out;
+
+      @media screen and (min-width: 768px) {
+        &:hover {
+          color: $yellow;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        color: $grayish-blue;
+      }
+    }
+
+    .contact-nav {
+      background-color: $white;
+      color: $very-dark-desat-blue;
+      font-family: $font-fraunces;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      transition: all 0.1s ease-in-out;
+
+      @media screen and (min-width: 768px) {
+        &:hover {
+          color: $white;
+          background-color: rgba(255, 255, 255, 0.35);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        background-color: $yellow;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 45vw;
+    }
+
+    @media screen and (max-width: 768px) {
+        position: absolute;
+        left: 5vw;
+        height: 35vh;
+        top: 6vh;
+        padding: 50px 0px 30px 0px;
+        background-color: $beige;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 90vw;
+        opacity: 0;
+        clip-path: polygon(0 10%, 0 100%, 100% 100%, 100% 0, 92% 10%);
+        transition: all 1s ease-in backwards;
+    }
+
+    @media screen and (max-width: 570px) {
+      left: 6vw;
+      width: 87vw;
+    }
+
+    @media screen and (max-width: 440px) {
+      width: 86vw;
+      height: 40vh;
+    }
+
+    @media screen and (max-width: 375px) {
+      width: 83vw;
+    }
+  }
+
+  .nav-active {
+    // opacity: 1;
+    animation: menuAppear 0.8s ease-in-out forwards;
+  }
+}
+
+@keyframes menuAppear {
+  0% {
+    top: 2vh;
+    opacity: 0;
+  }
+  100% {
+    top: 6vh;
+    opacity: 1;
+  }
+}
