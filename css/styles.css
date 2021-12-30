@@ -617,6 +617,12 @@ main {
   color: #25564b;
 }
 
+@media screen and (max-width: 872px) and (min-width: 825px) {
+  .third-container .third-info {
+    padding-bottom: 3.4vh;
+  }
+}
+
 @media screen and (max-width: 628px) {
   .third-container .third-info {
     min-height: 50vh;
