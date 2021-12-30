@@ -623,6 +623,12 @@ main {
   }
 }
 
+@media screen and (max-width: 1226px) and (min-width: 1064px) {
+  .third-container .third-info {
+    padding-bottom: 3.4vh;
+  }
+}
+
 @media screen and (max-width: 628px) {
   .third-container .third-info {
     min-height: 50vh;
