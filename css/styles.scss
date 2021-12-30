@@ -153,7 +153,7 @@ main {
     @media screen and (max-width: 628px) {
       background-image: url('../images/mobile/image-transform.jpg');
       width: auto;
-      height: 100vh;
+      min-height: 40vh;
     }
   }
 
@@ -171,7 +171,6 @@ main {
 
     @media screen and (max-width: 628px) {
       width: auto;
-      height: 100vh;
     }
   }
 
@@ -198,8 +197,8 @@ main {
   text-align: left;
   justify-content: space-evenly;
   align-self: center;
-  padding: 0vh 10vw 5vh 10vw;
-  height: 65%;
+  padding: 5vh 10vw;
+  min-height: 50%;
 
   h3 {
     font-family: $font-fraunces;
@@ -207,7 +206,7 @@ main {
     font-size: 2.35rem;
 
     @media screen and (max-width: 546px) {
-      margin-top: 3vh;
+      // margin-top: 4vh;
       margin-bottom: 1vh;
       font-size: 1.85rem;
     }
@@ -308,7 +307,7 @@ main {
     color: $dark-desat-cyan;
 
     @media screen and (max-width: 628px) {
-      height: 100vh;
+      min-height: 50vh;
       width: 100vw;
     }
   }
@@ -324,7 +323,7 @@ main {
     color: $dark-blue;
 
     @media screen and (max-width: 628px) {
-      height: 100vh;
+      min-height: 50vh;
       width: 100vw;
     }
   }
@@ -336,7 +335,7 @@ main {
 }
 
 .testimonials-section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: $beige;
   text-align: center;
 
@@ -356,7 +355,7 @@ main {
   }
 
   .testimonials-container {
-    height: 50%;
+    min-height: 50%;
     align-items: baseline;
 
     .testimonial {

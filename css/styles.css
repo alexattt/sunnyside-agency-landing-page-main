@@ -427,7 +427,7 @@ main {
   .first-container .transform-image-container {
     background-image: url("../images/mobile/image-transform.jpg");
     width: auto;
-    height: 100vh;
+    min-height: 40vh;
   }
 }
 
@@ -452,7 +452,6 @@ main {
 @media screen and (max-width: 628px) {
   .second-container .second-info {
     width: auto;
-    height: 100vh;
   }
 }
 
@@ -489,8 +488,8 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  padding: 0vh 10vw 5vh 10vw;
-  height: 65%;
+  padding: 5vh 10vw;
+  min-height: 50%;
 }
 
 .info-container h3 {
@@ -501,7 +500,6 @@ main {
 
 @media screen and (max-width: 546px) {
   .info-container h3 {
-    margin-top: 3vh;
     margin-bottom: 1vh;
     font-size: 1.85rem;
   }
@@ -621,7 +619,7 @@ main {
 
 @media screen and (max-width: 628px) {
   .third-container .third-info {
-    height: 100vh;
+    min-height: 50vh;
     width: 100vw;
   }
 }
@@ -641,7 +639,7 @@ main {
 
 @media screen and (max-width: 628px) {
   .third-container .fourth-info {
-    height: 100vh;
+    min-height: 50vh;
     width: 100vw;
   }
 }
@@ -657,7 +655,7 @@ main {
 }
 
 .testimonials-section {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #fffcfa;
   text-align: center;
 }
@@ -680,7 +678,7 @@ main {
 }
 
 .testimonials-section .testimonials-container {
-  height: 50%;
+  min-height: 50%;
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
